@@ -1,0 +1,19 @@
+Structure to minimize space used for a boolean array.
+
+Full documentation on usage is found in BoolArray.h
+
+Structs:
+	BoolArray:
+		- Stores a list of boolean values.
+
+BoolArray Creation Functions:
+	BoolArray BA_init(size_t count, bool init)
+		- Creates a BoolArray and initializes each element to a specified value.
+
+BoolArray Miscellaneous Functions:
+	void BA_destroy(BoolArray* ba)
+		- Frees the memory allocated in `BA_init`.
+	void BA_set(BoolArray* ba, size_t index, bool val)
+		Set an element in the BoolArray to a certain value.
+	bool BA_get(BoolArray* ba, size_t index)
+		Get an element in the BoolArray.
